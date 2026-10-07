@@ -15,7 +15,8 @@ def get_conn():
     return g.db
 
 
-def close_db(e=None):
+def close_db(_e=None):
+    _ = _e
     conn = g.pop("db", None)
     if conn is not None:
         conn.close()  # transação não commitada sofre rollback

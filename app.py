@@ -33,7 +33,8 @@ def create_app():
         return {"status": "API on"}
 
     @app.errorhandler(500)
-    def erro_interno(e):
+    def erro_interno(_e):
+        _ = _e
         return {"erro": "Erro interno do servidor."}, 500
 
     return app
