@@ -2,6 +2,8 @@
 
 API REST para atividades de língua portuguesa. Implementada com Flask, Blueprints e PostgreSQL. Não há autenticação: o jogador é identificado pelo apelido enviado nas respostas.
 
+**Autor do desenvolvimento back-end:** Gabriel Camargo Gonçalves Silva
+
 ## Executar localmente
 
 Requer Python e PostgreSQL.
@@ -21,6 +23,10 @@ python -m flask --app app run
 ```
 
 O `seed.py` cria as tabelas e carrega questões, flashcards e lacunas; ele limpa e recria esse conteúdo quando executado novamente, mas preserva os jogadores. Por padrão, a API fica disponível em `http://127.0.0.1:5000`.
+
+## Contrato para o front-end
+
+Consulte o [contrato de uso da API](docs/contrato-api.md) para integração: base URL, rotas, parâmetros, corpos JSON, respostas, erros e exemplos de chamadas.
 
 ## Convenções
 
